@@ -6,6 +6,7 @@ import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { HomeComponent } from './pages/home/home.component';
 import { TeamComponent } from './pages/team/team.component';
 import { ProjectComponent} from './pages/project/project.component';
+import { ApartmentComponent } from './pages/apartment/apartment.component';
 
 const routes: Routes = [
     { path: 'contactus', component: ContactusComponent },
@@ -13,6 +14,8 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'team', component: TeamComponent },
     { path: 'project', component: ProjectComponent},
+    { path: 'project/:id', component: ProjectComponent},
+    { path: 'apartment/:id', component: ApartmentComponent},
     { path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 

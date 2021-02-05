@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
@@ -10,6 +11,7 @@ import { TeamComponent } from './pages/team/team.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { ProjectComponent } from './pages/project/project.component';
+import { ApartmentComponent } from './pages/apartment/apartment.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +20,14 @@ import { ProjectComponent } from './pages/project/project.component';
     AboutusComponent,
     HomeComponent,
     TeamComponent,
-    ProjectComponent
+    ProjectComponent,
+    ApartmentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
